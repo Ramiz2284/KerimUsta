@@ -1,569 +1,1518 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ремонт кондиционеров в Анталии | Antalya Klima Servisi</title>
-<meta name="description" content="Ремонт, обслуживание и установка кондиционеров в Анталии. Выезд мастера сегодня. Бесплатная диагностика. | Antalya klima tamiri, bakımı ve kurulumu. Aynı gün servis.">
-<meta name="keywords" content="ремонт кондиционеров Анталия, кондиционер не работает Анталия, мастер кондиционеров Анталия, заправка кондиционера Анталия, установка кондиционеров Анталия, Antalya klima tamiri, klima servisi Antalya, klima bakımı Antalya">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#0a0f1e;--bg2:#0f1628;--card:#141c30;--card2:#1a2340;--border:rgba(255,255,255,0.08);--accent:#00d4ff;--glow:rgba(0,212,255,0.15);--text:#f0f4ff;--text2:#8899bb;--green:#00e676;--r:16px}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
-.lang-bar{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:rgba(10,15,30,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-.logo{font-family:'Space Mono',monospace;font-size:14px;color:var(--accent)}
-.lsw{display:flex;gap:4px;background:var(--card);border-radius:8px;padding:4px}
-.lbtn{padding:6px 14px;border:none;border-radius:6px;background:transparent;color:var(--text2);font-family:'Manrope',sans-serif;font-weight:600;font-size:13px;cursor:pointer;transition:all .2s}
-.lbtn.active{background:var(--accent);color:#000}
-.hero{padding:120px 24px 50px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:60px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(0,212,255,.1) 0%,transparent 70%);pointer-events:none}
-.badge{display:inline-flex;align-items:center;gap:8px;background:var(--glow);border:1px solid rgba(0,212,255,.3);border-radius:100px;padding:6px 16px;font-size:13px;font-weight:600;color:var(--accent);margin-bottom:20px}
-.badge::before{content:'';width:7px;height:7px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
-h1{font-size:clamp(30px,6vw,52px);font-weight:800;line-height:1.1;margin-bottom:14px;background:linear-gradient(135deg,#fff,#a0c8ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-p{font-size:17px;color:var(--text2);max-width:460px;margin:0 auto 28px;line-height:1.65}
-.trust-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:36px}
-.pill{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--border);border-radius:100px;padding:7px 13px;font-size:12px;font-weight:600;color:var(--text2)}
-.pill b{color:var(--green)}
-.fw{max-width:480px;margin:0 auto;padding:0 24px 80px}
-.prog-wrap{margin-bottom:28px}
-.prog-top{display:flex;justify-content:space-between;font-size:11px;color:var(--text2);margin-bottom:7px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-.prog-track{height:3px;background:var(--card2);border-radius:2px;overflow:hidden}
-.prog-fill{height:100%;background:linear-gradient(90deg,var(--accent),#60efff);border-radius:2px;transition:width .4s cubic-bezier(.4,0,.2,1)}
-.screen{display:none;animation:sIn .3s ease}
-.screen.active{display:block}
-@keyframes sIn{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:translateX(0)}}
-.stitle{font-size:21px;font-weight:700;margin-bottom:6px;line-height:1.3}
-.ssub{font-size:14px;color:var(--text2);margin-bottom:20px;line-height:1.5}
-.clist{display:flex;flex-direction:column;gap:11px}
-.cc{display:flex;align-items:center;gap:14px;background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);padding:17px 18px;cursor:pointer;transition:all .2s;text-align:left;width:100%;position:relative;overflow:hidden}
-.cc::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--glow),transparent);opacity:0;transition:opacity .2s}
-.cc:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,212,255,.12)}
-.cc:hover::before{opacity:1}
-.cc:active{transform:scale(.98)}
-.cico{font-size:26px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:var(--card2);border-radius:11px;flex-shrink:0}
-.ctx{flex:1}
-.ctitle{font-size:15px;font-weight:700;color:var(--text);margin-bottom:2px}
-.cdesc{font-size:12px;color:var(--text2)}
-.carr{color:var(--text2);font-size:20px;transition:all .2s}
-.cc:hover .carr{transform:translateX(4px);color:var(--accent)}
-.dblock{display:flex;flex-direction:column;gap:22px;margin-bottom:22px}
-.blabel{font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
-.chips{display:flex;gap:9px;flex-wrap:wrap}
-.chip{flex:1;min-width:70px;padding:13px 14px;background:var(--card);border:1.5px solid var(--border);border-radius:10px;color:var(--text2);font-family:'Manrope',sans-serif;font-weight:600;font-size:13px;cursor:pointer;transition:all .2s;text-align:center}
-.chip:hover{border-color:var(--accent);color:var(--text)}
-.chip.sel{background:var(--glow);border-color:var(--accent);color:var(--accent)}
-.fg{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
-.flabel{font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em}
-.finput{background:var(--card);border:1.5px solid var(--border);border-radius:10px;padding:15px 17px;color:var(--text);font-family:'Manrope',sans-serif;font-size:15px;font-weight:500;transition:border-color .2s;width:100%;outline:none}
-.finput::placeholder{color:var(--text2);opacity:.5}
-.finput:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(0,212,255,.1)}
-textarea.finput{resize:none;height:76px;line-height:1.5}
-.sumbox{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:18px}
-.sumtitle{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text2);margin-bottom:9px;font-weight:700}
-.sumrow{display:flex;justify-content:space-between;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--border);gap:10px;font-size:13px}
-.sumrow:last-child{border-bottom:none}
-.sumk{color:var(--text2);flex-shrink:0}
-.sumv{font-weight:600;color:var(--text);text-align:right}
-.btnp{width:100%;padding:17px 22px;background:var(--accent);color:#000;border:none;border-radius:var(--r);font-family:'Manrope',sans-serif;font-size:15px;font-weight:800;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:9px;margin-top:6px;letter-spacing:.02em;box-shadow:0 8px 28px rgba(0,212,255,.22)}
-.btnp:hover{background:#33ddff;transform:translateY(-2px);box-shadow:0 12px 36px rgba(0,212,255,.32)}
-.btnp:active{transform:scale(.98)}
-.btnp:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
-.btnb{width:100%;padding:13px;background:transparent;border:1.5px solid var(--border);border-radius:var(--r);color:var(--text2);font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;cursor:pointer;margin-top:9px;transition:all .2s}
-.btnb:hover{border-color:var(--text2);color:var(--text)}
-.hint{text-align:center;font-size:12px;color:var(--text2);margin-top:10px}
-.mconf{background:rgba(0,230,118,.08);border:1px solid rgba(0,230,118,.2);border-radius:10px;padding:12px 15px;font-size:13px;color:#66ffb2;margin-top:14px;display:none}
-.sscreen{display:none;text-align:center;padding:36px 0;animation:sIn .4s ease}
-.sscreen.active{display:block}
-.sico{width:78px;height:78px;background:rgba(0,230,118,.1);border:2px solid rgba(0,230,118,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:34px;margin:0 auto 22px;animation:pop .5s cubic-bezier(.175,.885,.32,1.275)}
-@keyframes pop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
-.stit{font-size:24px;font-weight:800;margin-bottom:10px}
-.ssub2{color:var(--text2);font-size:14px;line-height:1.65;margin-bottom:28px}
-.stime{display:inline-flex;align-items:center;gap:8px;background:var(--glow);border:1px solid rgba(0,212,255,.3);border-radius:100px;padding:10px 20px;font-size:14px;font-weight:700;color:var(--accent);margin-bottom:28px}
-.seo-wrap{background:var(--bg2);border-top:1px solid var(--border);padding:60px 24px}
-.seo-inner{max-width:820px;margin:0 auto}
-.seo-tog{display:flex;align-items:center;justify-content:center;gap:8px;background:transparent;border:1.5px solid var(--border);border-radius:100px;padding:11px 26px;color:var(--text2);font-family:'Manrope',sans-serif;font-weight:600;font-size:14px;cursor:pointer;margin:0 auto 36px;transition:all .2s}
-.seo-tog:hover{border-color:var(--text2);color:var(--text)}
-.seo-tog .arr{transition:transform .3s;display:inline-block}
-.seo-tog.open .arr{transform:rotate(180deg)}
-.seo-body{display:none}
-.seo-body.vis{display:block}
-.seo-body h2{font-size:24px;font-weight:800;margin:40px 0 10px;color:var(--text)}
-.seo-body h2:first-child{margin-top:0}
-.seo-body h3{font-size:16px;font-weight:700;color:var(--accent);margin:18px 0 7px}
-.seo-body p{color:var(--text2);line-height:1.8;font-size:15px;margin-bottom:13px}
-.seo-body ul{list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:13px}
-.seo-body li{color:var(--text2);font-size:14px;padding-left:18px;position:relative;line-height:1.7}
-.seo-body li::before{content:'→';position:absolute;left:0;color:var(--accent)}
-.faq-sec{max-width:820px;margin:0 auto;padding:60px 24px}
-.faq-h{font-size:24px;font-weight:800;text-align:center;margin-bottom:26px}
-.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);margin-bottom:10px;overflow:hidden}
-.faq-q{width:100%;text-align:left;padding:17px 19px;background:transparent;border:none;color:var(--text);font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;transition:color .2s}
-.faq-q:hover{color:var(--accent)}
-.faq-q .fa{transition:transform .3s;font-size:17px}
-.faq-item.open .faq-q .fa{transform:rotate(180deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s;padding:0 19px}
-.faq-item.open .faq-a{max-height:200px;padding:0 19px 17px}
-.faq-a p{color:var(--text2);font-size:13px;line-height:1.7}
-.cbar{background:var(--card);border-top:1px solid var(--border);padding:40px 24px;text-align:center}
-.cbar h3{font-size:19px;font-weight:700;margin-bottom:7px}
-.cbar p{color:var(--text2);margin-bottom:18px;font-size:14px}
-.clinks{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-.clink{display:inline-flex;align-items:center;gap:7px;padding:12px 18px;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none;transition:all .2s}
-.cwa{background:#25d366;color:#000}
-.cwa:hover{background:#1db954;transform:translateY(-2px)}
-.cph{background:var(--card2);color:var(--text);border:1px solid var(--border)}
-.cph:hover{border-color:var(--accent);color:var(--accent)}
-footer{text-align:center;padding:22px;border-top:1px solid var(--border);color:var(--text2);font-size:12px}
-[data-lang="tr"]{display:none}
-body.lang-tr [data-lang="ru"]{display:none}
-body.lang-tr [data-lang="tr"]{display:block}
-body.lang-tr .cc [data-lang="tr"]{display:flex}
-body.lang-tr .pill[data-lang="tr"]{display:inline-flex}
-@media(max-width:480px){.hero{padding:90px 16px 40px}.fw{padding:0 16px 60px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ремонт кондиционеров в Анталии | Antalya Klima Servisi</title>
+  <meta name="description"
+    content="Ремонт, обслуживание и установка кондиционеров в Анталии. Выезд мастера сегодня. Бесплатная диагностика. | Antalya klima tamiri, bakımı ve kurulumu. Aynı gün servis.">
+  <meta name="keywords"
+    content="ремонт кондиционеров Анталия, кондиционер не работает Анталия, мастер кондиционеров Анталия, заправка кондиционера Анталия, установка кондиционеров Анталия, Antalya klima tamiri, klima servisi Antalya, klima bakımı Antalya">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0f1e;
+      --bg2: #0f1628;
+      --card: #141c30;
+      --card2: #1a2340;
+      --border: rgba(255, 255, 255, 0.08);
+      --accent: #00d4ff;
+      --glow: rgba(0, 212, 255, 0.15);
+      --text: #f0f4ff;
+      --text2: #8899bb;
+      --green: #00e676;
+      --r: 16px
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden
+    }
+
+    .lang-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      background: rgba(10, 15, 30, .94);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border)
+    }
+
+    .logo {
+      font-family: 'Space Mono', monospace;
+      font-size: 14px;
+      color: var(--accent)
+    }
+
+    .lsw {
+      display: flex;
+      gap: 4px;
+      background: var(--card);
+      border-radius: 8px;
+      padding: 4px
+    }
+
+    .lbtn {
+      padding: 6px 14px;
+      border: none;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--text2);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all .2s
+    }
+
+    .lbtn.active {
+      background: var(--accent);
+      color: #000
+    }
+
+    .hero {
+      padding: 120px 24px 50px;
+      text-align: center;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(0, 212, 255, .1) 0%, transparent 70%);
+      pointer-events: none
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--glow);
+      border: 1px solid rgba(0, 212, 255, .3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 20px
+    }
+
+    .badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s infinite
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: .4;
+        transform: scale(1.4)
+      }
+    }
+
+    h1 {
+      font-size: clamp(30px, 6vw, 52px);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #fff, #a0c8ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text
+    }
+
+    .hero-p {
+      font-size: 17px;
+      color: var(--text2);
+      max-width: 460px;
+      margin: 0 auto 28px;
+      line-height: 1.65
+    }
+
+    .trust-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 7px 13px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text2)
+    }
+
+    .pill b {
+      color: var(--green)
+    }
+
+    .fw {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0 24px 80px
+    }
+
+    .prog-wrap {
+      margin-bottom: 28px
+    }
+
+    .prog-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text2);
+      margin-bottom: 7px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase
+    }
+
+    .prog-track {
+      height: 3px;
+      background: var(--card2);
+      border-radius: 2px;
+      overflow: hidden
+    }
+
+    .prog-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #60efff);
+      border-radius: 2px;
+      transition: width .4s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .screen {
+      display: none;
+      animation: sIn .3s ease
+    }
+
+    .screen.active {
+      display: block
+    }
+
+    @keyframes sIn {
+      from {
+        opacity: 0;
+        transform: translateX(18px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0)
+      }
+    }
+
+    .stitle {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      line-height: 1.3
+    }
+
+    .ssub {
+      font-size: 14px;
+      color: var(--text2);
+      margin-bottom: 20px;
+      line-height: 1.5
+    }
+
+    .clist {
+      display: flex;
+      flex-direction: column;
+      gap: 11px
+    }
+
+    .cc {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r);
+      padding: 17px 18px;
+      cursor: pointer;
+      transition: all .2s;
+      text-align: left;
+      width: 100%;
+      position: relative;
+      overflow: hidden
+    }
+
+    .cc::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--glow), transparent);
+      opacity: 0;
+      transition: opacity .2s
+    }
+
+    .cc:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0, 212, 255, .12)
+    }
+
+    .cc:hover::before {
+      opacity: 1
+    }
+
+    .cc:active {
+      transform: scale(.98)
+    }
+
+    .cico {
+      font-size: 26px;
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--card2);
+      border-radius: 11px;
+      flex-shrink: 0
+    }
+
+    .ctx {
+      flex: 1
+    }
+
+    .ctitle {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px
+    }
+
+    .cdesc {
+      font-size: 12px;
+      color: var(--text2)
+    }
+
+    .carr {
+      color: var(--text2);
+      font-size: 20px;
+      transition: all .2s
+    }
+
+    .cc:hover .carr {
+      transform: translateX(4px);
+      color: var(--accent)
+    }
+
+    .dblock {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin-bottom: 22px
+    }
+
+    .blabel {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 10px
+    }
+
+    .chips {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap
+    }
+
+    .chip {
+      flex: 1;
+      min-width: 70px;
+      padding: 13px 14px;
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      color: var(--text2);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all .2s;
+      text-align: center
+    }
+
+    .chip:hover {
+      border-color: var(--accent);
+      color: var(--text)
+    }
+
+    .chip.sel {
+      background: var(--glow);
+      border-color: var(--accent);
+      color: var(--accent)
+    }
+
+    .fg {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 14px
+    }
+
+    .flabel {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: .06em
+    }
+
+    .finput {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 15px 17px;
+      color: var(--text);
+      font-family: 'Manrope', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      transition: border-color .2s;
+      width: 100%;
+      outline: none
+    }
+
+    .finput::placeholder {
+      color: var(--text2);
+      opacity: .5
+    }
+
+    .finput:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(0, 212, 255, .1)
+    }
+
+    textarea.finput {
+      resize: none;
+      height: 76px;
+      line-height: 1.5
+    }
+
+    .sumbox {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 18px
+    }
+
+    .sumtitle {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--text2);
+      margin-bottom: 9px;
+      font-weight: 700
+    }
+
+    .sumrow {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      gap: 10px;
+      font-size: 13px
+    }
+
+    .sumrow:last-child {
+      border-bottom: none
+    }
+
+    .sumk {
+      color: var(--text2);
+      flex-shrink: 0
+    }
+
+    .sumv {
+      font-weight: 600;
+      color: var(--text);
+      text-align: right
+    }
+
+    .btnp {
+      width: 100%;
+      padding: 17px 22px;
+      background: var(--accent);
+      color: #000;
+      border: none;
+      border-radius: var(--r);
+      font-family: 'Manrope', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      margin-top: 6px;
+      letter-spacing: .02em;
+      box-shadow: 0 8px 28px rgba(0, 212, 255, .22)
+    }
+
+    .btnp:hover {
+      background: #33ddff;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px rgba(0, 212, 255, .32)
+    }
+
+    .btnp:active {
+      transform: scale(.98)
+    }
+
+    .btnp:disabled {
+      opacity: .4;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none
+    }
+
+    .btnb {
+      width: 100%;
+      padding: 13px;
+      background: transparent;
+      border: 1.5px solid var(--border);
+      border-radius: var(--r);
+      color: var(--text2);
+      font-family: 'Manrope', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 9px;
+      transition: all .2s
+    }
+
+    .btnb:hover {
+      border-color: var(--text2);
+      color: var(--text)
+    }
+
+    .hint {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text2);
+      margin-top: 10px
+    }
+
+    .mconf {
+      background: rgba(0, 230, 118, .08);
+      border: 1px solid rgba(0, 230, 118, .2);
+      border-radius: 10px;
+      padding: 12px 15px;
+      font-size: 13px;
+      color: #66ffb2;
+      margin-top: 14px;
+      display: none
+    }
+
+    .sscreen {
+      display: none;
+      text-align: center;
+      padding: 36px 0;
+      animation: sIn .4s ease
+    }
+
+    .sscreen.active {
+      display: block
+    }
+
+    .sico {
+      width: 78px;
+      height: 78px;
+      background: rgba(0, 230, 118, .1);
+      border: 2px solid rgba(0, 230, 118, .3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      margin: 0 auto 22px;
+      animation: pop .5s cubic-bezier(.175, .885, .32, 1.275)
+    }
+
+    @keyframes pop {
+      from {
+        transform: scale(0);
+        opacity: 0
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1
+      }
+    }
+
+    .stit {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 10px
+    }
+
+    .ssub2 {
+      color: var(--text2);
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 28px
+    }
+
+    .stime {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--glow);
+      border: 1px solid rgba(0, 212, 255, .3);
+      border-radius: 100px;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 28px
+    }
+
+    .seo-wrap {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 60px 24px
+    }
+
+    .seo-inner {
+      max-width: 820px;
+      margin: 0 auto
+    }
+
+    .seo-tog {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: transparent;
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      padding: 11px 26px;
+      color: var(--text2);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      margin: 0 auto 36px;
+      transition: all .2s
+    }
+
+    .seo-tog:hover {
+      border-color: var(--text2);
+      color: var(--text)
+    }
+
+    .seo-tog .arr {
+      transition: transform .3s;
+      display: inline-block
+    }
+
+    .seo-tog.open .arr {
+      transform: rotate(180deg)
+    }
+
+    .seo-body {
+      display: none
+    }
+
+    .seo-body.vis {
+      display: block
+    }
+
+    .seo-body h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 40px 0 10px;
+      color: var(--text)
+    }
+
+    .seo-body h2:first-child {
+      margin-top: 0
+    }
+
+    .seo-body h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 18px 0 7px
+    }
+
+    .seo-body p {
+      color: var(--text2);
+      line-height: 1.8;
+      font-size: 15px;
+      margin-bottom: 13px
+    }
+
+    .seo-body ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 13px
+    }
+
+    .seo-body li {
+      color: var(--text2);
+      font-size: 14px;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.7
+    }
+
+    .seo-body li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent)
+    }
+
+    .faq-sec {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 24px
+    }
+
+    .faq-h {
+      font-size: 24px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 26px
+    }
+
+    .faq-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      margin-bottom: 10px;
+      overflow: hidden
+    }
+
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      padding: 17px 19px;
+      background: transparent;
+      border: none;
+      color: var(--text);
+      font-family: 'Manrope', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      transition: color .2s
+    }
+
+    .faq-q:hover {
+      color: var(--accent)
+    }
+
+    .faq-q .fa {
+      transition: transform .3s;
+      font-size: 17px
+    }
+
+    .faq-item.open .faq-q .fa {
+      transform: rotate(180deg)
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease, padding .3s;
+      padding: 0 19px
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 200px;
+      padding: 0 19px 17px
+    }
+
+    .faq-a p {
+      color: var(--text2);
+      font-size: 13px;
+      line-height: 1.7
+    }
+
+    .cbar {
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      text-align: center
+    }
+
+    .cbar h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 7px
+    }
+
+    .cbar p {
+      color: var(--text2);
+      margin-bottom: 18px;
+      font-size: 14px
+    }
+
+    .clinks {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+    .clink {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all .2s
+    }
+
+    .cwa {
+      background: #25d366;
+      color: #000
+    }
+
+    .cwa:hover {
+      background: #1db954;
+      transform: translateY(-2px)
+    }
+
+    .cph {
+      background: var(--card2);
+      color: var(--text);
+      border: 1px solid var(--border)
+    }
+
+    .cph:hover {
+      border-color: var(--accent);
+      color: var(--accent)
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--text2);
+      font-size: 12px
+    }
+
+    [data-lang="tr"] {
+      display: none
+    }
+
+    body.lang-tr [data-lang="ru"] {
+      display: none
+    }
+
+    body.lang-tr [data-lang="tr"] {
+      display: block
+    }
+
+    body.lang-tr .cc [data-lang="tr"] {
+      display: flex
+    }
+
+    body.lang-tr .pill[data-lang="tr"] {
+      display: inline-flex
+    }
+
+    @media(max-width:480px) {
+      .hero {
+        padding: 90px 16px 40px
+      }
+
+      .fw {
+        padding: 0 16px 60px
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="lang-bar">
-  <div class="logo">❄️ KlimaServis</div>
-  <div class="lsw">
-    <button class="lbtn active" onclick="setLang('ru')">RU</button>
-    <button class="lbtn" onclick="setLang('tr')">TR</button>
-  </div>
-</div>
-
-<section class="hero">
-  <div class="badge" data-lang="ru">● На связи · Анталия</div>
-  <div class="badge" data-lang="tr">● Aktif · Antalya</div>
-  <h1 data-lang="ru">Кондиционер<br>барахлит?</h1>
-  <h1 data-lang="tr">Kliman mı<br>arıza verdi?</h1>
-  <p class="hero-p" data-lang="ru">Мастер выедет сегодня. Оставьте заявку за 30 секунд — без звонков и ожидания.</p>
-  <p class="hero-p" data-lang="tr">Usta bugün gelir. 30 saniyede sipariş bırakın — aramadan, beklemeden.</p>
-  <div class="trust-row">
-    <div class="pill" data-lang="ru"><b>✓</b> Бесплатная диагностика</div>
-    <div class="pill" data-lang="ru"><b>✓</b> Выезд за 30–60 мин</div>
-    <div class="pill" data-lang="ru"><b>✓</b> Гарантия на работу</div>
-    <div class="pill" data-lang="tr"><b>✓</b> Ücretsiz teşhis</div>
-    <div class="pill" data-lang="tr"><b>✓</b> 30–60 dk içinde servis</div>
-    <div class="pill" data-lang="tr"><b>✓</b> İşçilik garantisi</div>
-  </div>
-</section>
-
-<div class="fw">
-  <div class="prog-wrap" id="progWrap">
-    <div class="prog-top">
-      <span id="stepLbl">Шаг 1 из 4</span>
-      <span id="stepPct">25%</span>
-    </div>
-    <div class="prog-track"><div class="prog-fill" id="progFill" style="width:25%"></div></div>
-  </div>
-
-  <!-- S1 -->
-  <div class="screen active" id="s1">
-    <div class="stitle" data-lang="ru">Что случилось с кондиционером?</div>
-    <div class="stitle" data-lang="tr">Klimanızda ne oldu?</div>
-    <div class="ssub" data-lang="ru">Выберите подходящий вариант</div>
-    <div class="ssub" data-lang="tr">Uygun seçeneği belirleyin</div>
-    <div class="clist">
-      <button class="cc" onclick="selIssue('not_working','Не работает','Çalışmıyor')">
-        <div class="cico">🔧</div>
-        <div class="ctx">
-          <div class="ctitle" data-lang="ru">Не работает</div>
-          <div class="ctitle" data-lang="tr">Çalışmıyor</div>
-          <div class="cdesc" data-lang="ru">Не включается, не реагирует</div>
-          <div class="cdesc" data-lang="tr">Açılmıyor, tepki vermiyor</div>
-        </div>
-        <div class="carr">›</div>
-      </button>
-      <button class="cc" onclick="selIssue('works_bad','Работает плохо','Kötü çalışıyor')">
-        <div class="cico">❄️</div>
-        <div class="ctx">
-          <div class="ctitle" data-lang="ru">Работает плохо</div>
-          <div class="ctitle" data-lang="tr">Kötü çalışıyor</div>
-          <div class="cdesc" data-lang="ru">Включается, но не охлаждает нормально</div>
-          <div class="cdesc" data-lang="tr">Açılıyor ama düzgün soğutmuyor</div>
-        </div>
-        <div class="carr">›</div>
-      </button>
-      <button class="cc" onclick="selIssue('install','Установить новый','Yeni klima')">
-        <div class="cico">🆕</div>
-        <div class="ctx">
-          <div class="ctitle" data-lang="ru">Хочу установить новый</div>
-          <div class="ctitle" data-lang="tr">Yeni klima takmak istiyorum</div>
-          <div class="cdesc" data-lang="ru">Монтаж, подбор модели</div>
-          <div class="cdesc" data-lang="tr">Kurulum, model seçimi</div>
-        </div>
-        <div class="carr">›</div>
-      </button>
+  <div class="lang-bar">
+    <div class="logo">❄️ KlimaServis</div>
+    <div class="lsw">
+      <button class="lbtn active" onclick="setLang('ru')">RU</button>
+      <button class="lbtn" onclick="setLang('tr')">TR</button>
     </div>
   </div>
 
-  <!-- S2 not_working -->
-  <div class="screen" id="s2-nw">
-    <div class="stitle" data-lang="ru">Что именно происходит?</div>
-    <div class="stitle" data-lang="tr">Tam olarak ne oluyor?</div>
-    <div class="ssub" data-lang="ru">Выберите ближайшее описание</div>
-    <div class="ssub" data-lang="tr">En yakın açıklamayı seçin</div>
-    <div class="clist">
-      <button class="cc" onclick="selDetail('Не включается','Açılmıyor')"><div class="cico">⚡</div><div class="ctx"><div class="ctitle" data-lang="ru">Не включается</div><div class="ctitle" data-lang="tr">Açılmıyor</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Дует тёплым воздухом','Sıcak hava üflüyor')"><div class="cico">🌡️</div><div class="ctx"><div class="ctitle" data-lang="ru">Дует тёплым воздухом</div><div class="ctitle" data-lang="tr">Sıcak hava üflüyor</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Течёт вода','Su akıyor')"><div class="cico">💧</div><div class="ctx"><div class="ctitle" data-lang="ru">Течёт вода</div><div class="ctitle" data-lang="tr">Su akıyor</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Шумит','Gürültü yapıyor')"><div class="cico">🔊</div><div class="ctx"><div class="ctitle" data-lang="ru">Шумит</div><div class="ctitle" data-lang="tr">Gürültü yapıyor</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Просто перестал работать','Aniden durdu')"><div class="cico">❓</div><div class="ctx"><div class="ctitle" data-lang="ru">Просто перестал работать</div><div class="ctitle" data-lang="tr">Aniden durdu</div></div><div class="carr">›</div></button>
+  <section class="hero">
+    <div class="badge" data-lang="ru">● На связи · Анталия</div>
+    <div class="badge" data-lang="tr">● Aktif · Antalya</div>
+    <h1 data-lang="ru">Кондиционер<br>барахлит?</h1>
+    <h1 data-lang="tr">Kliman mı<br>arıza verdi?</h1>
+    <p class="hero-p" data-lang="ru">Мастер выедет сегодня. Оставьте заявку за 30 секунд — без звонков и ожидания.</p>
+    <p class="hero-p" data-lang="tr">Usta bugün gelir. 30 saniyede sipariş bırakın — aramadan, beklemeden.</p>
+    <div class="trust-row">
+      <div class="pill" data-lang="ru"><b>✓</b> Бесплатная диагностика</div>
+      <div class="pill" data-lang="ru"><b>✓</b> Выезд за 30–60 мин</div>
+      <div class="pill" data-lang="ru"><b>✓</b> Гарантия на работу</div>
+      <div class="pill" data-lang="tr"><b>✓</b> Ücretsiz teşhis</div>
+      <div class="pill" data-lang="tr"><b>✓</b> 30–60 dk içinde servis</div>
+      <div class="pill" data-lang="tr"><b>✓</b> İşçilik garantisi</div>
     </div>
-    <button class="btnb" onclick="goBack(1)" data-lang="ru">← Назад</button>
-    <button class="btnb" onclick="goBack(1)" data-lang="tr">← Geri</button>
-  </div>
+  </section>
 
-  <!-- S2 works_bad -->
-  <div class="screen" id="s2-wb">
-    <div class="stitle" data-lang="ru">Что именно происходит?</div>
-    <div class="stitle" data-lang="tr">Tam olarak ne oluyor?</div>
-    <div class="ssub" data-lang="ru">Выберите ближайшее описание</div>
-    <div class="ssub" data-lang="tr">En yakın açıklamayı seçin</div>
-    <div class="clist">
-      <button class="cc" onclick="selDetail('Плохо охлаждает','Zayıf soğutuyor')"><div class="cico">🥵</div><div class="ctx"><div class="ctitle" data-lang="ru">Плохо охлаждает</div><div class="ctitle" data-lang="tr">Zayıf soğutuyor</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Долго запускается','Yavaş başlıyor')"><div class="cico">⏱️</div><div class="ctx"><div class="ctitle" data-lang="ru">Долго запускается</div><div class="ctitle" data-lang="tr">Yavaş başlıyor</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Появился запах','Kötü koku var')"><div class="cico">👃</div><div class="ctx"><div class="ctitle" data-lang="ru">Появился запах</div><div class="ctitle" data-lang="tr">Kötü koku var</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Слабый поток воздуха','Zayıf hava akışı')"><div class="cico">💨</div><div class="ctx"><div class="ctitle" data-lang="ru">Слабый поток воздуха</div><div class="ctitle" data-lang="tr">Zayıf hava akışı</div></div><div class="carr">›</div></button>
-    </div>
-    <button class="btnb" onclick="goBack(1)" data-lang="ru">← Назад</button>
-    <button class="btnb" onclick="goBack(1)" data-lang="tr">← Geri</button>
-  </div>
-
-  <!-- S2 install -->
-  <div class="screen" id="s2-inst">
-    <div class="stitle" data-lang="ru">Тип помещения</div>
-    <div class="stitle" data-lang="tr">Mekan türü</div>
-    <div class="ssub" data-lang="ru">Где нужно установить кондиционер?</div>
-    <div class="ssub" data-lang="tr">Klima nereye kurulacak?</div>
-    <div class="clist">
-      <button class="cc" onclick="selDetail('Квартира','Daire')"><div class="cico">🏠</div><div class="ctx"><div class="ctitle" data-lang="ru">Квартира</div><div class="ctitle" data-lang="tr">Daire</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Частный дом','Müstakil ev')"><div class="cico">🏡</div><div class="ctx"><div class="ctitle" data-lang="ru">Частный дом</div><div class="ctitle" data-lang="tr">Müstakil ev</div></div><div class="carr">›</div></button>
-      <button class="cc" onclick="selDetail('Офис','Ofis')"><div class="cico">🏢</div><div class="ctx"><div class="ctitle" data-lang="ru">Офис</div><div class="ctitle" data-lang="tr">Ofis</div></div><div class="carr">›</div></button>
-    </div>
-    <button class="btnb" onclick="goBack(1)" data-lang="ru">← Назад</button>
-    <button class="btnb" onclick="goBack(1)" data-lang="tr">← Geri</button>
-  </div>
-
-  <!-- S3 -->
-  <div class="screen" id="s3">
-    <div class="stitle" data-lang="ru">Немного деталей</div>
-    <div class="stitle" data-lang="tr">Birkaç detay</div>
-    <div class="ssub" data-lang="ru">Это поможет мастеру подготовиться</div>
-    <div class="ssub" data-lang="tr">Bu, ustanın hazırlanmasına yardımcı olacak</div>
-    <div class="dblock" id="s3-main">
-      <div id="loc-block">
-        <div class="blabel" data-lang="ru">Где установлен кондиционер?</div>
-        <div class="blabel" data-lang="tr">Klima nerede kurulu?</div>
-        <div class="chips" id="loc-chips">
-          <button class="chip" data-val-ru="Квартира" data-val-tr="Daire" onclick="selChip('loc',this)"><span data-lang="ru">Квартира</span><span data-lang="tr">Daire</span></button>
-          <button class="chip" data-val-ru="Частный дом" data-val-tr="Müstakil ev" onclick="selChip('loc',this)"><span data-lang="ru">Частный дом</span><span data-lang="tr">Müstakil ev</span></button>
-        </div>
+  <div class="fw">
+    <div class="prog-wrap" id="progWrap">
+      <div class="prog-top">
+        <span id="stepLbl">Шаг 1 из 4</span>
+        <span id="stepPct">25%</span>
       </div>
-      <div>
-        <div class="blabel" data-lang="ru">Насколько срочно?</div>
-        <div class="blabel" data-lang="tr">Ne kadar acil?</div>
-        <div class="chips" id="urg-chips">
-          <button class="chip" data-val-ru="Сегодня" data-val-tr="Bugün" onclick="selChip('urg',this)"><span data-lang="ru">Сегодня</span><span data-lang="tr">Bugün</span></button>
-          <button class="chip" data-val-ru="Завтра" data-val-tr="Yarın" onclick="selChip('urg',this)"><span data-lang="ru">Завтра</span><span data-lang="tr">Yarın</span></button>
-          <button class="chip" data-val-ru="Не срочно" data-val-tr="Acil değil" onclick="selChip('urg',this)"><span data-lang="ru">Не срочно</span><span data-lang="tr">Acil değil</span></button>
-        </div>
+      <div class="prog-track">
+        <div class="prog-fill" id="progFill" style="width:25%"></div>
       </div>
     </div>
-    <div id="mconf-s3" class="mconf" data-lang="ru">Такие проблемы мы обычно решаем за 30–60 минут ✓</div>
-    <div id="mconf-s3-tr" class="mconf" data-lang="tr">Bu tür sorunları genellikle 30–60 dakikada çözüyoruz ✓</div>
-    <button class="btnp" id="btnS3" disabled onclick="goToS4()" data-lang="ru">Продолжить →</button>
-    <button class="btnp" id="btnS3tr" disabled onclick="goToS4()" data-lang="tr">Devam et →</button>
-    <button class="btnb" onclick="goBack(2)" data-lang="ru">← Назад</button>
-    <button class="btnb" onclick="goBack(2)" data-lang="tr">← Geri</button>
+
+    <!-- S1 -->
+    <div class="screen active" id="s1">
+      <div class="stitle" data-lang="ru">Что случилось с кондиционером?</div>
+      <div class="stitle" data-lang="tr">Klimanızda ne oldu?</div>
+      <div class="ssub" data-lang="ru">Выберите подходящий вариант</div>
+      <div class="ssub" data-lang="tr">Uygun seçeneği belirleyin</div>
+      <div class="clist">
+        <button class="cc" onclick="selIssue('not_working','Не работает','Çalışmıyor')">
+          <div class="cico">🔧</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Не работает</div>
+            <div class="ctitle" data-lang="tr">Çalışmıyor</div>
+            <div class="cdesc" data-lang="ru">Не включается, не реагирует</div>
+            <div class="cdesc" data-lang="tr">Açılmıyor, tepki vermiyor</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selIssue('works_bad','Работает плохо','Kötü çalışıyor')">
+          <div class="cico">❄️</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Работает плохо</div>
+            <div class="ctitle" data-lang="tr">Kötü çalışıyor</div>
+            <div class="cdesc" data-lang="ru">Включается, но не охлаждает нормально</div>
+            <div class="cdesc" data-lang="tr">Açılıyor ama düzgün soğutmuyor</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selIssue('install','Установить новый','Yeni klima')">
+          <div class="cico">🆕</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Хочу установить новый</div>
+            <div class="ctitle" data-lang="tr">Yeni klima takmak istiyorum</div>
+            <div class="cdesc" data-lang="ru">Монтаж, подбор модели</div>
+            <div class="cdesc" data-lang="tr">Kurulum, model seçimi</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- S2 not_working -->
+    <div class="screen" id="s2-nw">
+      <div class="stitle" data-lang="ru">Что именно происходит?</div>
+      <div class="stitle" data-lang="tr">Tam olarak ne oluyor?</div>
+      <div class="ssub" data-lang="ru">Выберите ближайшее описание</div>
+      <div class="ssub" data-lang="tr">En yakın açıklamayı seçin</div>
+      <div class="clist">
+        <button class="cc" onclick="selDetail('Не включается','Açılmıyor')">
+          <div class="cico">⚡</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Не включается</div>
+            <div class="ctitle" data-lang="tr">Açılmıyor</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Дует тёплым воздухом','Sıcak hava üflüyor')">
+          <div class="cico">🌡️</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Дует тёплым воздухом</div>
+            <div class="ctitle" data-lang="tr">Sıcak hava üflüyor</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Течёт вода','Su akıyor')">
+          <div class="cico">💧</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Течёт вода</div>
+            <div class="ctitle" data-lang="tr">Su akıyor</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Шумит','Gürültü yapıyor')">
+          <div class="cico">🔊</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Шумит</div>
+            <div class="ctitle" data-lang="tr">Gürültü yapıyor</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Просто перестал работать','Aniden durdu')">
+          <div class="cico">❓</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Просто перестал работать</div>
+            <div class="ctitle" data-lang="tr">Aniden durdu</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+      </div>
+      <button class="btnb" onclick="goBack(1)" data-lang="ru">← Назад</button>
+      <button class="btnb" onclick="goBack(1)" data-lang="tr">← Geri</button>
+    </div>
+
+    <!-- S2 works_bad -->
+    <div class="screen" id="s2-wb">
+      <div class="stitle" data-lang="ru">Что именно происходит?</div>
+      <div class="stitle" data-lang="tr">Tam olarak ne oluyor?</div>
+      <div class="ssub" data-lang="ru">Выберите ближайшее описание</div>
+      <div class="ssub" data-lang="tr">En yakın açıklamayı seçin</div>
+      <div class="clist">
+        <button class="cc" onclick="selDetail('Плохо охлаждает','Zayıf soğutuyor')">
+          <div class="cico">🥵</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Плохо охлаждает</div>
+            <div class="ctitle" data-lang="tr">Zayıf soğutuyor</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Долго запускается','Yavaş başlıyor')">
+          <div class="cico">⏱️</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Долго запускается</div>
+            <div class="ctitle" data-lang="tr">Yavaş başlıyor</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Появился запах','Kötü koku var')">
+          <div class="cico">👃</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Появился запах</div>
+            <div class="ctitle" data-lang="tr">Kötü koku var</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Слабый поток воздуха','Zayıf hava akışı')">
+          <div class="cico">💨</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Слабый поток воздуха</div>
+            <div class="ctitle" data-lang="tr">Zayıf hava akışı</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+      </div>
+      <button class="btnb" onclick="goBack(1)" data-lang="ru">← Назад</button>
+      <button class="btnb" onclick="goBack(1)" data-lang="tr">← Geri</button>
+    </div>
+
+    <!-- S2 install -->
+    <div class="screen" id="s2-inst">
+      <div class="stitle" data-lang="ru">Тип помещения</div>
+      <div class="stitle" data-lang="tr">Mekan türü</div>
+      <div class="ssub" data-lang="ru">Где нужно установить кондиционер?</div>
+      <div class="ssub" data-lang="tr">Klima nereye kurulacak?</div>
+      <div class="clist">
+        <button class="cc" onclick="selDetail('Квартира','Daire')">
+          <div class="cico">🏠</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Квартира</div>
+            <div class="ctitle" data-lang="tr">Daire</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Частный дом','Müstakil ev')">
+          <div class="cico">🏡</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Частный дом</div>
+            <div class="ctitle" data-lang="tr">Müstakil ev</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+        <button class="cc" onclick="selDetail('Офис','Ofis')">
+          <div class="cico">🏢</div>
+          <div class="ctx">
+            <div class="ctitle" data-lang="ru">Офис</div>
+            <div class="ctitle" data-lang="tr">Ofis</div>
+          </div>
+          <div class="carr">›</div>
+        </button>
+      </div>
+      <button class="btnb" onclick="goBack(1)" data-lang="ru">← Назад</button>
+      <button class="btnb" onclick="goBack(1)" data-lang="tr">← Geri</button>
+    </div>
+
+    <!-- S3 -->
+    <div class="screen" id="s3">
+      <div class="stitle" data-lang="ru">Немного деталей</div>
+      <div class="stitle" data-lang="tr">Birkaç detay</div>
+      <div class="ssub" data-lang="ru">Это поможет мастеру подготовиться</div>
+      <div class="ssub" data-lang="tr">Bu, ustanın hazırlanmasına yardımcı olacak</div>
+      <div class="dblock" id="s3-main">
+        <div id="loc-block">
+          <div class="blabel" data-lang="ru">Где установлен кондиционер?</div>
+          <div class="blabel" data-lang="tr">Klima nerede kurulu?</div>
+          <div class="chips" id="loc-chips">
+            <button class="chip" data-val-ru="Квартира" data-val-tr="Daire" onclick="selChip('loc',this)"><span
+                data-lang="ru">Квартира</span><span data-lang="tr">Daire</span></button>
+            <button class="chip" data-val-ru="Частный дом" data-val-tr="Müstakil ev" onclick="selChip('loc',this)"><span
+                data-lang="ru">Частный дом</span><span data-lang="tr">Müstakil ev</span></button>
+          </div>
+        </div>
+        <div>
+          <div class="blabel" data-lang="ru">Насколько срочно?</div>
+          <div class="blabel" data-lang="tr">Ne kadar acil?</div>
+          <div class="chips" id="urg-chips">
+            <button class="chip" data-val-ru="Сегодня" data-val-tr="Bugün" onclick="selChip('urg',this)"><span
+                data-lang="ru">Сегодня</span><span data-lang="tr">Bugün</span></button>
+            <button class="chip" data-val-ru="Завтра" data-val-tr="Yarın" onclick="selChip('urg',this)"><span
+                data-lang="ru">Завтра</span><span data-lang="tr">Yarın</span></button>
+            <button class="chip" data-val-ru="Не срочно" data-val-tr="Acil değil" onclick="selChip('urg',this)"><span
+                data-lang="ru">Не срочно</span><span data-lang="tr">Acil değil</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="mconf-s3" class="mconf" data-lang="ru">Такие проблемы мы обычно решаем за 30–60 минут ✓</div>
+      <div id="mconf-s3-tr" class="mconf" data-lang="tr">Bu tür sorunları genellikle 30–60 dakikada çözüyoruz ✓</div>
+      <button class="btnp" id="btnS3" disabled onclick="goToS4()" data-lang="ru">Продолжить →</button>
+      <button class="btnp" id="btnS3tr" disabled onclick="goToS4()" data-lang="tr">Devam et →</button>
+      <button class="btnb" onclick="goBack(2)" data-lang="ru">← Назад</button>
+      <button class="btnb" onclick="goBack(2)" data-lang="tr">← Geri</button>
+    </div>
+
+    <!-- S4 -->
+    <div class="screen" id="s4">
+      <div class="stitle" data-lang="ru">Оставьте контакты</div>
+      <div class="stitle" data-lang="tr">İletişim bilgilerinizi bırakın</div>
+      <div class="ssub" data-lang="ru">Мастер свяжется с вами в течение 5–10 минут</div>
+      <div class="ssub" data-lang="tr">Usta 5–10 dakika içinde sizinle iletişime geçecek</div>
+      <div class="sumbox">
+        <div class="sumtitle" data-lang="ru">Ваша заявка</div>
+        <div class="sumtitle" data-lang="tr">Siparişiniz</div>
+        <div class="sumrow"><span class="sumk" data-lang="ru">Проблема</span><span class="sumk"
+            data-lang="tr">Sorun</span><span class="sumv" id="sum-issue"></span></div>
+        <div class="sumrow"><span class="sumk" data-lang="ru">Описание</span><span class="sumk"
+            data-lang="tr">Açıklama</span><span class="sumv" id="sum-detail"></span></div>
+        <div class="sumrow" id="sum-loc-row"><span class="sumk" data-lang="ru">Объект</span><span class="sumk"
+            data-lang="tr">Nesne</span><span class="sumv" id="sum-loc"></span></div>
+        <div class="sumrow"><span class="sumk" data-lang="ru">Срочность</span><span class="sumk"
+            data-lang="tr">Aciliyet</span><span class="sumv" id="sum-urg"></span></div>
+      </div>
+      <div class="fg">
+        <div class="flabel" data-lang="ru">Адрес</div>
+        <div class="flabel" data-lang="tr">Adres</div>
+        <input class="finput" id="inp-addr" type="text" placeholder="Antalya, Lara..." oninput="checkS4()">
+      </div>
+      <div class="fg">
+        <div class="flabel" data-lang="ru">Телефон</div>
+        <div class="flabel" data-lang="tr">Telefon</div>
+        <input class="finput" id="inp-phone" type="tel" placeholder="+90 5XX XXX XX XX" oninput="checkS4()">
+      </div>
+      <div class="fg">
+        <div class="flabel" data-lang="ru">Комментарий (необязательно)</div>
+        <div class="flabel" data-lang="tr">Yorum (isteğe bağlı)</div>
+        <textarea class="finput" id="inp-comment" placeholder="..."></textarea>
+      </div>
+      <button class="btnp" id="btnSend" disabled onclick="sendToWA()">
+        <span data-lang="ru">🚀 Отправить мастеру</span>
+        <span data-lang="tr">🚀 Ustaya gönder</span>
+      </button>
+      <p class="hint" data-lang="ru">Перезвоним в течение 5–10 минут</p>
+      <p class="hint" data-lang="tr">5–10 dakika içinde sizi arayacağız</p>
+      <button class="btnb" onclick="goBack(3)" data-lang="ru">← Назад</button>
+      <button class="btnb" onclick="goBack(3)" data-lang="tr">← Geri</button>
+    </div>
+
+    <!-- SUCCESS -->
+    <div class="sscreen" id="success">
+      <div class="sico">✓</div>
+      <div class="stit" data-lang="ru">Заявка отправлена!</div>
+      <div class="stit" data-lang="tr">Sipariş gönderildi!</div>
+      <div class="ssub2" data-lang="ru">Мастер получил вашу заявку в WhatsApp и свяжется с вами в ближайшее время.</div>
+      <div class="ssub2" data-lang="tr">Usta siparişinizi WhatsApp'ta aldı ve en kısa sürede sizinle iletişime geçecek.
+      </div>
+      <div class="stime" data-lang="ru">⏱ Ждите звонка через 5–10 мин</div>
+      <div class="stime" data-lang="tr">⏱ 5–10 dakika içinde aramayı bekleyin</div>
+      <div
+        style="margin-top:20px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;font-size:13px;color:var(--text2)"
+        data-lang="ru">
+        <b style="color:var(--accent)">✓</b> Бесплатная диагностика при ремонте&nbsp;&nbsp;
+        <b style="color:var(--accent)">✓</b> Гарантия на все работы
+      </div>
+      <div
+        style="margin-top:20px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;font-size:13px;color:var(--text2)"
+        data-lang="tr">
+        <b style="color:var(--accent)">✓</b> Tamir için ücretsiz teşhis&nbsp;&nbsp;
+        <b style="color:var(--accent)">✓</b> Tüm işler için garanti
+      </div>
+    </div>
   </div>
 
-  <!-- S4 -->
-  <div class="screen" id="s4">
-    <div class="stitle" data-lang="ru">Оставьте контакты</div>
-    <div class="stitle" data-lang="tr">İletişim bilgilerinizi bırakın</div>
-    <div class="ssub" data-lang="ru">Мастер свяжется с вами в течение 5–10 минут</div>
-    <div class="ssub" data-lang="tr">Usta 5–10 dakika içinde sizinle iletişime geçecek</div>
-    <div class="sumbox">
-      <div class="sumtitle" data-lang="ru">Ваша заявка</div>
-      <div class="sumtitle" data-lang="tr">Siparişiniz</div>
-      <div class="sumrow"><span class="sumk" data-lang="ru">Проблема</span><span class="sumk" data-lang="tr">Sorun</span><span class="sumv" id="sum-issue"></span></div>
-      <div class="sumrow"><span class="sumk" data-lang="ru">Описание</span><span class="sumk" data-lang="tr">Açıklama</span><span class="sumv" id="sum-detail"></span></div>
-      <div class="sumrow" id="sum-loc-row"><span class="sumk" data-lang="ru">Объект</span><span class="sumk" data-lang="tr">Nesne</span><span class="sumv" id="sum-loc"></span></div>
-      <div class="sumrow"><span class="sumk" data-lang="ru">Срочность</span><span class="sumk" data-lang="tr">Aciliyet</span><span class="sumv" id="sum-urg"></span></div>
+  <!-- SEO SECTION -->
+  <div class="seo-wrap">
+    <div class="seo-inner">
+      <div data-lang="ru">
+        <button class="seo-tog" id="seo-tog-ru" onclick="toggleSeo('ru')">
+          Подробнее о всех услугах <span class="arr">▼</span>
+        </button>
+        <div class="seo-body" id="seo-body-ru">
+          <h2>Ремонт кондиционеров в Анталии</h2>
+          <p>Профессиональный ремонт, обслуживание и установка кондиционеров в Анталии и окрестностях. Опытный мастер
+            выезжает сегодня, диагностика бесплатно при ремонте.</p>
+          <h3>Ремонт кондиционеров</h3>
+          <p>Если кондиционер не включается, дует тёплым воздухом, течёт вода или шумит — мы устраним неисправность в
+            день обращения. Работаем со всеми марками: Daikin, Mitsubishi, Panasonic, Samsung, LG и другими.</p>
+          <ul>
+            <li>Диагностика неисправностей кондиционера</li>
+            <li>Ремонт компрессора и теплообменника</li>
+            <li>Устранение утечек фреона</li>
+            <li>Ремонт платы управления</li>
+            <li>Заправка кондиционера фреоном в Анталии</li>
+          </ul>
+          <h3>Обслуживание кондиционеров в Анталии</h3>
+          <p>Регулярное обслуживание продлевает срок службы оборудования и снижает счёт за электричество. Рекомендуем
+            проводить техническое обслуживание кондиционера раз в год.</p>
+          <ul>
+            <li>Чистка фильтров и внутреннего блока</li>
+            <li>Дезинфекция и устранение запахов</li>
+            <li>Проверка давления и уровня фреона</li>
+            <li>Промывка дренажной системы</li>
+          </ul>
+          <h3>Установка кондиционеров в Анталии</h3>
+          <p>Монтаж сплит-систем любой мощности в квартирах, домах и офисах Анталии. Помогаем подобрать модель по
+            площади помещения и бюджету.</p>
+          <ul>
+            <li>Установка сплит-систем под ключ</li>
+            <li>Демонтаж старого оборудования</li>
+            <li>Подбор мощности кондиционера</li>
+            <li>Гарантия на монтажные работы</li>
+          </ul>
+        </div>
+      </div>
+      <div data-lang="tr">
+        <button class="seo-tog" id="seo-tog-tr" onclick="toggleSeo('tr')">
+          Tüm hizmetler hakkında bilgi <span class="arr">▼</span>
+        </button>
+        <div class="seo-body" id="seo-body-tr">
+          <h2>Antalya Klima Tamiri ve Servisi</h2>
+          <p>Antalya ve çevresinde profesyonel klima tamiri, bakımı ve kurulumu. Deneyimli usta bugün gelir, onarımda
+            teşhis ücretsizdir.</p>
+          <h3>Klima Tamiri</h3>
+          <p>Klimanız açılmıyorsa, sıcak hava üflüyorsa, su damlıyorsa veya gürültü yapıyorsa — başvuru günü arızayı
+            gideriyoruz. Daikin, Mitsubishi, Panasonic, Samsung, LG ve diğer tüm markalarla çalışıyoruz.</p>
+          <ul>
+            <li>Klima arıza teşhisi</li>
+            <li>Kompresör ve eşanjör tamiri</li>
+            <li>Freon kaçağı onarımı</li>
+            <li>Antalya'da klima gazı dolumu</li>
+          </ul>
+          <h3>Antalya Klima Bakımı</h3>
+          <p>Düzenli bakım, ekipmanın ömrünü uzatır ve elektrik faturasını düşürür. Klimanızı yılda bir kez bakımdan
+            geçirmenizi öneririz.</p>
+          <ul>
+            <li>Filtre ve iç ünite temizliği</li>
+            <li>Dezenfeksiyon ve koku giderme</li>
+            <li>Basınç ve freon seviyesi kontrolü</li>
+            <li>Drenaj sistemi yıkama</li>
+          </ul>
+          <h3>Antalya Klima Kurulumu</h3>
+          <p>Antalya'daki daire, ev ve ofislerde her güçte split sistem montajı. Oda büyüklüğüne ve bütçeye göre model
+            seçiminde yardımcı oluyoruz.</p>
+          <ul>
+            <li>Anahtar teslim split sistem kurulumu</li>
+            <li>Eski cihaz demontajı</li>
+            <li>Klima gücü seçimi</li>
+            <li>Montaj işlerine garanti</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="fg">
-      <div class="flabel" data-lang="ru">Адрес</div>
-      <div class="flabel" data-lang="tr">Adres</div>
-      <input class="finput" id="inp-addr" type="text" placeholder="Antalya, Lara..." oninput="checkS4()">
-    </div>
-    <div class="fg">
-      <div class="flabel" data-lang="ru">Телефон</div>
-      <div class="flabel" data-lang="tr">Telefon</div>
-      <input class="finput" id="inp-phone" type="tel" placeholder="+90 5XX XXX XX XX" oninput="checkS4()">
-    </div>
-    <div class="fg">
-      <div class="flabel" data-lang="ru">Комментарий (необязательно)</div>
-      <div class="flabel" data-lang="tr">Yorum (isteğe bağlı)</div>
-      <textarea class="finput" id="inp-comment" placeholder="..."></textarea>
-    </div>
-    <button class="btnp" id="btnSend" disabled onclick="sendToWA()">
-      <span data-lang="ru">🚀 Отправить мастеру</span>
-      <span data-lang="tr">🚀 Ustaya gönder</span>
-    </button>
-    <p class="hint" data-lang="ru">Перезвоним в течение 5–10 минут</p>
-    <p class="hint" data-lang="tr">5–10 dakika içinde sizi arayacağız</p>
-    <button class="btnb" onclick="goBack(3)" data-lang="ru">← Назад</button>
-    <button class="btnb" onclick="goBack(3)" data-lang="tr">← Geri</button>
   </div>
 
-  <!-- SUCCESS -->
-  <div class="sscreen" id="success">
-    <div class="sico">✓</div>
-    <div class="stit" data-lang="ru">Заявка отправлена!</div>
-    <div class="stit" data-lang="tr">Sipariş gönderildi!</div>
-    <div class="ssub2" data-lang="ru">Мастер получил вашу заявку в WhatsApp и свяжется с вами в ближайшее время.</div>
-    <div class="ssub2" data-lang="tr">Usta siparişinizi WhatsApp'ta aldı ve en kısa sürede sizinle iletişime geçecek.</div>
-    <div class="stime" data-lang="ru">⏱ Ждите звонка через 5–10 мин</div>
-    <div class="stime" data-lang="tr">⏱ 5–10 dakika içinde aramayı bekleyin</div>
-    <div style="margin-top:20px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;font-size:13px;color:var(--text2)" data-lang="ru">
-      <b style="color:var(--accent)">✓</b> Бесплатная диагностика при ремонте&nbsp;&nbsp;
-      <b style="color:var(--accent)">✓</b> Гарантия на все работы
-    </div>
-    <div style="margin-top:20px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;font-size:13px;color:var(--text2)" data-lang="tr">
-      <b style="color:var(--accent)">✓</b> Tamir için ücretsiz teşhis&nbsp;&nbsp;
-      <b style="color:var(--accent)">✓</b> Tüm işler için garanti
-    </div>
-  </div>
-</div>
+  <!-- FAQ -->
+  <div class="faq-sec">
+    <div class="faq-h" data-lang="ru">Частые вопросы</div>
+    <div class="faq-h" data-lang="tr">Sık sorulan sorular</div>
 
-<!-- SEO SECTION -->
-<div class="seo-wrap">
-  <div class="seo-inner">
     <div data-lang="ru">
-      <button class="seo-tog" id="seo-tog-ru" onclick="toggleSeo('ru')">
-        Подробнее о всех услугах <span class="arr">▼</span>
-      </button>
-      <div class="seo-body" id="seo-body-ru">
-        <h2>Ремонт кондиционеров в Анталии</h2>
-        <p>Профессиональный ремонт, обслуживание и установка кондиционеров в Анталии и окрестностях. Опытный мастер выезжает сегодня, диагностика бесплатно при ремонте.</p>
-        <h3>Ремонт кондиционеров</h3>
-        <p>Если кондиционер не включается, дует тёплым воздухом, течёт вода или шумит — мы устраним неисправность в день обращения. Работаем со всеми марками: Daikin, Mitsubishi, Panasonic, Samsung, LG и другими.</p>
-        <ul>
-          <li>Диагностика неисправностей кондиционера</li>
-          <li>Ремонт компрессора и теплообменника</li>
-          <li>Устранение утечек фреона</li>
-          <li>Ремонт платы управления</li>
-          <li>Заправка кондиционера фреоном в Анталии</li>
-        </ul>
-        <h3>Обслуживание кондиционеров в Анталии</h3>
-        <p>Регулярное обслуживание продлевает срок службы оборудования и снижает счёт за электричество. Рекомендуем проводить техническое обслуживание кондиционера раз в год.</p>
-        <ul>
-          <li>Чистка фильтров и внутреннего блока</li>
-          <li>Дезинфекция и устранение запахов</li>
-          <li>Проверка давления и уровня фреона</li>
-          <li>Промывка дренажной системы</li>
-        </ul>
-        <h3>Установка кондиционеров в Анталии</h3>
-        <p>Монтаж сплит-систем любой мощности в квартирах, домах и офисах Анталии. Помогаем подобрать модель по площади помещения и бюджету.</p>
-        <ul>
-          <li>Установка сплит-систем под ключ</li>
-          <li>Демонтаж старого оборудования</li>
-          <li>Подбор мощности кондиционера</li>
-          <li>Гарантия на монтажные работы</li>
-        </ul>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Почему кондиционер не охлаждает? <span
+            class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>Чаще всего причина — недостаток фреона (утечка хладагента), загрязнённые фильтры или неисправный
+            компрессор.
+
+            Также возможны другие технические неисправности:
+
+            загрязнённая или повреждённая крыльчатка вентилятора (снижается поток воздуха);
+
+            обмерзание или засорение испарителя (ухудшается теплообмен);
+
+            загрязнение конденсатора наружного блока;
+
+            неисправность платы управления;
+
+            выход из строя датчиков температуры;
+
+            проблемы с пусковым конденсатором;
+
+            частичная закупорка капиллярной трубки.
+
+            Мастер определит точную причину при диагностике, проверит давление в системе, состояние теплообменников,
+            работу компрессора и вентилятора..</p>
+        </div>
+      </div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Сколько стоит ремонт кондиционера в Анталии?
+          <span class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>Стоимость зависит от типа неисправности. Диагностика бесплатна при выполнении ремонта. Мастер назовёт цену
+            после осмотра.</p>
+        </div>
+      </div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Как быстро приедет мастер? <span
+            class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>В большинстве случаев мастер приезжает в течение 30–60 минут после подтверждения заявки.</p>
+        </div>
+      </div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Нужно ли обслуживать кондиционер каждый год?
+          <span class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>Да, рекомендуем раз в год. В жарком климате Анталии кондиционеры работают интенсивно, и регулярная чистка
+            продлевает их ресурс и снижает потребление электроэнергии.</p>
+        </div>
+      </div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Есть ли гарантия на работы? <span
+            class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>Да, на все выполненные работы предоставляется гарантия. Уточняйте срок у мастера при оформлении заявки.</p>
+        </div>
       </div>
     </div>
+
     <div data-lang="tr">
-      <button class="seo-tog" id="seo-tog-tr" onclick="toggleSeo('tr')">
-        Tüm hizmetler hakkında bilgi <span class="arr">▼</span>
-      </button>
-      <div class="seo-body" id="seo-body-tr">
-        <h2>Antalya Klima Tamiri ve Servisi</h2>
-        <p>Antalya ve çevresinde profesyonel klima tamiri, bakımı ve kurulumu. Deneyimli usta bugün gelir, onarımda teşhis ücretsizdir.</p>
-        <h3>Klima Tamiri</h3>
-        <p>Klimanız açılmıyorsa, sıcak hava üflüyorsa, su damlıyorsa veya gürültü yapıyorsa — başvuru günü arızayı gideriyoruz. Daikin, Mitsubishi, Panasonic, Samsung, LG ve diğer tüm markalarla çalışıyoruz.</p>
-        <ul>
-          <li>Klima arıza teşhisi</li>
-          <li>Kompresör ve eşanjör tamiri</li>
-          <li>Freon kaçağı onarımı</li>
-          <li>Antalya'da klima gazı dolumu</li>
-        </ul>
-        <h3>Antalya Klima Bakımı</h3>
-        <p>Düzenli bakım, ekipmanın ömrünü uzatır ve elektrik faturasını düşürür. Klimanızı yılda bir kez bakımdan geçirmenizi öneririz.</p>
-        <ul>
-          <li>Filtre ve iç ünite temizliği</li>
-          <li>Dezenfeksiyon ve koku giderme</li>
-          <li>Basınç ve freon seviyesi kontrolü</li>
-          <li>Drenaj sistemi yıkama</li>
-        </ul>
-        <h3>Antalya Klima Kurulumu</h3>
-        <p>Antalya'daki daire, ev ve ofislerde her güçte split sistem montajı. Oda büyüklüğüne ve bütçeye göre model seçiminde yardımcı oluyoruz.</p>
-        <ul>
-          <li>Anahtar teslim split sistem kurulumu</li>
-          <li>Eski cihaz demontajı</li>
-          <li>Klima gücü seçimi</li>
-          <li>Montaj işlerine garanti</li>
-        </ul>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Klima neden soğutmuyor? <span
+            class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>En yaygın nedenler düşük freon seviyesi, kirli filtreler veya arızalı kompresördür. Usta teşhis sırasında
+            kesin nedeni belirleyecektir.</p>
+        </div>
+      </div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Antalya'da klima tamiri ne kadar? <span
+            class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>Maliyet arızanın türüne göre değişir. Onarım yapılması durumunda teşhis ücretsizdir. Usta muayeneden sonra
+            fiyat verecektir.</p>
+        </div>
+      </div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Usta ne kadar sürede gelir? <span
+            class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>Çoğu durumda usta, sipariş onayından sonra 30–60 dakika içinde gelir.</p>
+        </div>
+      </div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Klimayı her yıl bakıma göndermek gerekiyor
+          mu? <span class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>Evet, yılda bir kez öneriyoruz. Antalya'nın sıcak ikliminde klimalar yoğun çalışır; düzenli temizlik ömrünü
+            uzatır ve enerji tüketimini azaltır.</p>
+        </div>
+      </div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">İşlere garanti var mı? <span
+            class="fa">▼</span></button>
+        <div class="faq-a">
+          <p>Evet, yapılan tüm işlere garanti verilmektedir. Sipariş sırasında ustayla süreyi netleştiriniz.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- FAQ -->
-<div class="faq-sec">
-  <div class="faq-h" data-lang="ru">Частые вопросы</div>
-  <div class="faq-h" data-lang="tr">Sık sorulan sorular</div>
-
-  <div data-lang="ru">
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Почему кондиционер не охлаждает? <span class="fa">▼</span></button><div class="faq-a"><p>Чаще всего причина — недостаток фреона, загрязнённые фильтры или неисправный компрессор. Мастер определит точную причину при диагностике.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Сколько стоит ремонт кондиционера в Анталии? <span class="fa">▼</span></button><div class="faq-a"><p>Стоимость зависит от типа неисправности. Диагностика бесплатна при выполнении ремонта. Мастер назовёт цену после осмотра.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Как быстро приедет мастер? <span class="fa">▼</span></button><div class="faq-a"><p>В большинстве случаев мастер приезжает в течение 30–60 минут после подтверждения заявки.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Нужно ли обслуживать кондиционер каждый год? <span class="fa">▼</span></button><div class="faq-a"><p>Да, рекомендуем раз в год. В жарком климате Анталии кондиционеры работают интенсивно, и регулярная чистка продлевает их ресурс и снижает потребление электроэнергии.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Есть ли гарантия на работы? <span class="fa">▼</span></button><div class="faq-a"><p>Да, на все выполненные работы предоставляется гарантия. Уточняйте срок у мастера при оформлении заявки.</p></div></div>
+  <!-- CONTACTS -->
+  <div class="cbar">
+    <h3 data-lang="ru">Позвонить мастеру</h3>
+    <h3 data-lang="tr">Ustayı ara</h3>
+    <p data-lang="ru">Работаем ежедневно · Анталия</p>
+    <p data-lang="tr">Her gün çalışıyoruz · Antalya</p>
+    <div class="clinks">
+      <a class="clink cwa" href="https://wa.me/905527300257" target="_blank" data-lang="ru">💬 WhatsApp</a>
+      <a class="clink cwa" href="https://wa.me/905527300257" target="_blank" data-lang="tr">💬 WhatsApp</a>
+      <a class="clink cph" href="tel:+905527300257" data-lang="ru">📞 Позвонить</a>
+      <a class="clink cph" href="tel:+905527300257" data-lang="tr">📞 Ara</a>
+    </div>
   </div>
 
-  <div data-lang="tr">
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Klima neden soğutmuyor? <span class="fa">▼</span></button><div class="faq-a"><p>En yaygın nedenler düşük freon seviyesi, kirli filtreler veya arızalı kompresördür. Usta teşhis sırasında kesin nedeni belirleyecektir.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Antalya'da klima tamiri ne kadar? <span class="fa">▼</span></button><div class="faq-a"><p>Maliyet arızanın türüne göre değişir. Onarım yapılması durumunda teşhis ücretsizdir. Usta muayeneden sonra fiyat verecektir.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Usta ne kadar sürede gelir? <span class="fa">▼</span></button><div class="faq-a"><p>Çoğu durumda usta, sipariş onayından sonra 30–60 dakika içinde gelir.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Klimayı her yıl bakıma göndermek gerekiyor mu? <span class="fa">▼</span></button><div class="faq-a"><p>Evet, yılda bir kez öneriyoruz. Antalya'nın sıcak ikliminde klimalar yoğun çalışır; düzenli temizlik ömrünü uzatır ve enerji tüketimini azaltır.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">İşlere garanti var mı? <span class="fa">▼</span></button><div class="faq-a"><p>Evet, yapılan tüm işlere garanti verilmektedir. Sipariş sırasında ustayla süreyi netleştiriniz.</p></div></div>
-  </div>
-</div>
+  <footer>
+    <span data-lang="ru">© 2024 KlimaServis Анталия · Ремонт и установка кондиционеров</span>
+    <span data-lang="tr">© 2024 KlimaServis Antalya · Klima tamiri ve kurulumu</span>
+  </footer>
 
-<!-- CONTACTS -->
-<div class="cbar">
-  <h3 data-lang="ru">Позвонить мастеру</h3>
-  <h3 data-lang="tr">Ustayı ara</h3>
-  <p data-lang="ru">Работаем ежедневно · Анталия</p>
-  <p data-lang="tr">Her gün çalışıyoruz · Antalya</p>
-  <div class="clinks">
-    <a class="clink cwa" href="https://wa.me/905527300257" target="_blank" data-lang="ru">💬 WhatsApp</a>
-    <a class="clink cwa" href="https://wa.me/905527300257" target="_blank" data-lang="tr">💬 WhatsApp</a>
-    <a class="clink cph" href="tel:+905527300257" data-lang="ru">📞 Позвонить</a>
-    <a class="clink cph" href="tel:+905527300257" data-lang="tr">📞 Ara</a>
-  </div>
-</div>
+  <script>
+    const WA_NUMBER = '905527300257' // ЗАМЕНИТЕ НА РЕАЛЬНЫЙ НОМЕР / GERÇEK NUMARAYLA DEĞİŞTİRİN
 
-<footer>
-  <span data-lang="ru">© 2024 KlimaServis Анталия · Ремонт и установка кондиционеров</span>
-  <span data-lang="tr">© 2024 KlimaServis Antalya · Klima tamiri ve kurulumu</span>
-</footer>
+    let state = { lang: 'ru', issue: '', issueLabel: '', detail: '', loc: '', urg: '', step: 1 }
 
-<script>
-const WA_NUMBER = '905527300257'; // ЗАМЕНИТЕ НА РЕАЛЬНЫЙ НОМЕР / GERÇEK NUMARAYLA DEĞİŞTİRİN
+    function setLang(l) {
+      state.lang = l
+      document.body.className = l === 'tr' ? 'lang-tr' : ''
+      document.querySelectorAll('.lbtn').forEach(b => b.classList.remove('active'))
+      document.querySelector(`.lbtn[onclick="setLang('${l}')"]`).classList.add('active')
+      updateStepLabel()
+    }
 
-let state = {lang:'ru', issue:'', issueLabel:'', detail:'', loc:'', urg:'', step:1};
+    function updateProgress(step, total) {
+      const pct = Math.round((step / total) * 100)
+      document.getElementById('progFill').style.width = pct + '%'
+      document.getElementById('stepPct').textContent = pct + '%'
+      updateStepLabel()
+    }
 
-function setLang(l){
-  state.lang = l;
-  document.body.className = l==='tr' ? 'lang-tr' : '';
-  document.querySelectorAll('.lbtn').forEach(b=>b.classList.remove('active'));
-  document.querySelector(`.lbtn[onclick="setLang('${l}')"]`).classList.add('active');
-  updateStepLabel();
-}
+    const stepLabels = { ru: ['Шаг 1 из 4', 'Шаг 2 из 4', 'Шаг 3 из 4', 'Шаг 4 из 4'], tr: ['Adım 1/4', 'Adım 2/4', 'Adım 3/4', 'Adım 4/4'] }
 
-function updateProgress(step, total){
-  const pct = Math.round((step/total)*100);
-  document.getElementById('progFill').style.width = pct+'%';
-  document.getElementById('stepPct').textContent = pct+'%';
-  updateStepLabel();
-}
+    function updateStepLabel() {
+      const s = state.step - 1
+      const lbl = (state.lang === 'tr' ? stepLabels.tr : stepLabels.ru)[Math.min(s, 3)]
+      document.getElementById('stepLbl').textContent = lbl || ''
+    }
 
-const stepLabels = {ru:['Шаг 1 из 4','Шаг 2 из 4','Шаг 3 из 4','Шаг 4 из 4'], tr:['Adım 1/4','Adım 2/4','Adım 3/4','Adım 4/4']};
+    function showScreen(id, step) {
+      document.querySelectorAll('.screen, .sscreen').forEach(s => s.classList.remove('active'))
+      const el = document.getElementById(id)
+      if (el) el.classList.add('active')
+      state.step = step
+      if (id === 'success') {
+        document.getElementById('progWrap').style.display = 'none'
+        return
+      }
+      document.getElementById('progWrap').style.display = 'block'
+      updateProgress(step, 4)
+    }
 
-function updateStepLabel(){
-  const s = state.step-1;
-  const lbl = (state.lang==='tr' ? stepLabels.tr : stepLabels.ru)[Math.min(s,3)];
-  document.getElementById('stepLbl').textContent = lbl || '';
-}
+    function selIssue(type, labelRu, labelTr) {
+      state.issue = type
+      state.issueLabel = state.lang === 'tr' ? labelTr : labelRu
+      if (type === 'not_working') showScreen('s2-nw', 2)
+      else if (type === 'works_bad') showScreen('s2-wb', 2)
+      else { state.detail = state.lang === 'tr' ? 'Yeni kurulum' : 'Новая установка'; showScreen('s2-inst', 2) }
+    }
 
-function showScreen(id, step){
-  document.querySelectorAll('.screen, .sscreen').forEach(s=>s.classList.remove('active'));
-  const el = document.getElementById(id);
-  if(el) el.classList.add('active');
-  state.step = step;
-  if(id==='success'){
-    document.getElementById('progWrap').style.display='none';
-    return;
-  }
-  document.getElementById('progWrap').style.display='block';
-  updateProgress(step,4);
-}
+    function selDetail(ru, tr) {
+      state.detail = state.lang === 'tr' ? tr : ru
+      if (state.issue === 'install') {
+        state.loc = state.detail
+        showScreen('s3', 3)
+        // hide loc block for install
+        document.getElementById('loc-block').style.display = 'none'
+        checkS3()
+      } else {
+        document.getElementById('loc-block').style.display = 'block'
+        showScreen('s3', 3)
+        checkS3()
+      }
+      // show micro confirm
+      const mc = document.getElementById('mconf-s3')
+      const mctr = document.getElementById('mconf-s3-tr')
+      if (state.issue !== 'install') { mc.style.display = 'block'; mctr.style.display = 'block' }
+    }
 
-function selIssue(type, labelRu, labelTr){
-  state.issue = type;
-  state.issueLabel = state.lang==='tr' ? labelTr : labelRu;
-  if(type==='not_working') showScreen('s2-nw',2);
-  else if(type==='works_bad') showScreen('s2-wb',2);
-  else { state.detail = state.lang==='tr' ? 'Yeni kurulum' : 'Новая установка'; showScreen('s2-inst',2); }
-}
+    function selChip(type, el) {
+      const group = type === 'loc' ? 'loc-chips' : 'urg-chips'
+      document.querySelectorAll('#' + group + ' .chip').forEach(c => c.classList.remove('sel'))
+      el.classList.add('sel')
+      const ru = el.getAttribute('data-val-ru')
+      const tr = el.getAttribute('data-val-tr')
+      if (type === 'loc') state.loc = state.lang === 'tr' ? tr : ru
+      else state.urg = state.lang === 'tr' ? tr : ru
+      checkS3()
+    }
 
-function selDetail(ru, tr){
-  state.detail = state.lang==='tr' ? tr : ru;
-  if(state.issue==='install'){
-    state.loc = state.detail;
-    showScreen('s3',3);
-    // hide loc block for install
-    document.getElementById('loc-block').style.display='none';
-    checkS3();
-  } else {
-    document.getElementById('loc-block').style.display='block';
-    showScreen('s3',3);
-    checkS3();
-  }
-  // show micro confirm
-  const mc = document.getElementById('mconf-s3');
-  const mctr = document.getElementById('mconf-s3-tr');
-  if(state.issue!=='install'){ mc.style.display='block'; mctr.style.display='block'; }
-}
+    function checkS3() {
+      const locOk = state.issue === 'install' || state.loc !== ''
+      const urgOk = state.urg !== ''
+      const ok = locOk && urgOk
+      document.getElementById('btnS3').disabled = !ok
+      document.getElementById('btnS3tr').disabled = !ok
+    }
 
-function selChip(type, el){
-  const group = type==='loc' ? 'loc-chips' : 'urg-chips';
-  document.querySelectorAll('#'+group+' .chip').forEach(c=>c.classList.remove('sel'));
-  el.classList.add('sel');
-  const ru = el.getAttribute('data-val-ru');
-  const tr = el.getAttribute('data-val-tr');
-  if(type==='loc') state.loc = state.lang==='tr' ? tr : ru;
-  else state.urg = state.lang==='tr' ? tr : ru;
-  checkS3();
-}
+    function goToS4() {
+      // fill summary
+      document.getElementById('sum-issue').textContent = state.issueLabel
+      document.getElementById('sum-detail').textContent = state.detail
+      document.getElementById('sum-loc').textContent = state.loc || '—'
+      document.getElementById('sum-urg').textContent = state.urg
+      showScreen('s4', 4)
+    }
 
-function checkS3(){
-  const locOk = state.issue==='install' || state.loc!=='';
-  const urgOk = state.urg!=='';
-  const ok = locOk && urgOk;
-  document.getElementById('btnS3').disabled = !ok;
-  document.getElementById('btnS3tr').disabled = !ok;
-}
+    function checkS4() {
+      const addr = document.getElementById('inp-addr').value.trim()
+      const phone = document.getElementById('inp-phone').value.trim()
+      document.getElementById('btnSend').disabled = !(addr && phone)
+    }
 
-function goToS4(){
-  // fill summary
-  document.getElementById('sum-issue').textContent = state.issueLabel;
-  document.getElementById('sum-detail').textContent = state.detail;
-  document.getElementById('sum-loc').textContent = state.loc || '—';
-  document.getElementById('sum-urg').textContent = state.urg;
-  showScreen('s4',4);
-}
-
-function checkS4(){
-  const addr = document.getElementById('inp-addr').value.trim();
-  const phone = document.getElementById('inp-phone').value.trim();
-  document.getElementById('btnSend').disabled = !(addr && phone);
-}
-
-function sendToWA(){
-  const addr = document.getElementById('inp-addr').value.trim();
-  const phone = document.getElementById('inp-phone').value.trim();
-  const comment = document.getElementById('inp-comment').value.trim();
-  const isRu = state.lang==='ru';
-  let msg;
-  if(isRu){
-    msg = `Новая заявка с сайта:
+    function sendToWA() {
+      const addr = document.getElementById('inp-addr').value.trim()
+      const phone = document.getElementById('inp-phone').value.trim()
+      const comment = document.getElementById('inp-comment').value.trim()
+      const isRu = state.lang === 'ru'
+      let msg
+      if (isRu) {
+        msg = `Новая заявка с сайта:
 
 Тип запроса: ${state.issueLabel}
 Проблема: ${state.detail}
@@ -574,9 +1523,9 @@ function sendToWA(){
 Телефон клиента: ${phone}
 Комментарий: ${comment || '—'}
 
-Отправлено через сайт.`;
-  } else {
-    msg = `Siteden yeni sipariş:
+Отправлено через сайт.`
+      } else {
+        msg = `Siteden yeni sipariş:
 
 İstek türü: ${state.issueLabel}
 Sorun: ${state.detail}
@@ -587,35 +1536,36 @@ Adres: ${addr}
 Müşteri telefonu: ${phone}
 Yorum: ${comment || '—'}
 
-Site üzerinden gönderildi.`;
-  }
-  const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
-  window.open(url, '_blank');
-  showScreen('success', 5);
-}
+Site üzerinden gönderildi.`
+      }
+      const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`
+      window.open(url, '_blank')
+      showScreen('success', 5)
+    }
 
-function goBack(toStep){
-  if(toStep===1) showScreen('s1',1);
-  else if(toStep===2){
-    if(state.issue==='not_working') showScreen('s2-nw',2);
-    else if(state.issue==='works_bad') showScreen('s2-wb',2);
-    else showScreen('s2-inst',2);
-  }
-  else if(toStep===3) showScreen('s3',3);
-}
+    function goBack(toStep) {
+      if (toStep === 1) showScreen('s1', 1)
+      else if (toStep === 2) {
+        if (state.issue === 'not_working') showScreen('s2-nw', 2)
+        else if (state.issue === 'works_bad') showScreen('s2-wb', 2)
+        else showScreen('s2-inst', 2)
+      }
+      else if (toStep === 3) showScreen('s3', 3)
+    }
 
-function toggleSeo(lang){
-  const tog = document.getElementById('seo-tog-'+lang);
-  const body = document.getElementById('seo-body-'+lang);
-  tog.classList.toggle('open');
-  body.classList.toggle('vis');
-}
+    function toggleSeo(lang) {
+      const tog = document.getElementById('seo-tog-' + lang)
+      const body = document.getElementById('seo-body-' + lang)
+      tog.classList.toggle('open')
+      body.classList.toggle('vis')
+    }
 
-function toggleFaq(btn){
-  btn.closest('.faq-item').classList.toggle('open');
-}
+    function toggleFaq(btn) {
+      btn.closest('.faq-item').classList.toggle('open')
+    }
 
-updateStepLabel();
-</script>
+    updateStepLabel();
+  </script>
 </body>
+
 </html>
